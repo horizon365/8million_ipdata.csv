@@ -4,22 +4,23 @@
 经过网上搜集分析后得到的最全ip地址库，2016年5月实际条目为7,968,540条；
 
 
-下载地址：（可能需要迅雷才能下载，我这里chrome浏览器多次下载失败）
+#下载地址：
+（可能需要迅雷才能下载，我这里chrome浏览器多次下载失败）
 http://download.db-ip.com/free/dbip-city-2016-05.csv.gz
 
-postgres创建命令：
-CREATE TABLE public.db_ip (
-  ip_from INET PRIMARY KEY NOT NULL,
-  ip_to INET NOT NULL,
-  country CHARACTER VARYING(64) NOT NULL,
-  region CHARACTER VARYING(64) NOT NULL,
-  city CHARACTER VARYING(64) NOT NULL
-);
+#postgres创建命令：
+    CREATE TABLE public.db_ip (
+      ip_from INET PRIMARY KEY NOT NULL,
+      ip_to INET NOT NULL,
+      country CHARACTER VARYING(64) NOT NULL,
+      region CHARACTER VARYING(64) NOT NULL,
+      city CHARACTER VARYING(64) NOT NULL
+    );
 
-提示：
-postgre特有的inet数据格式，使其可以直接通过目标ip<或者>来判断，例如
+#提示：
+    postgre特有的inet数据格式，使其可以直接通过目标ip<或者>来判断，例如
     select * from db_ip where ip_from <'0.0.0.0' AND ip_to > '0.0.0.0'
     
     
-使用方法：
+#使用方法：
   使用以上命令在postgre创建表格后，再用navicat等可视化工具导入下载后解压得到的dbip-city.csv文件。解压后近500M，耐心等待完成即可。
