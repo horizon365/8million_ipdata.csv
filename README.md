@@ -4,9 +4,9 @@
 经过网上搜集分析后得到的最全ip地址库，2016年5月实际条目为7,968,540条；
 
 
-#下载地址：
-（可能需要迅雷才能下载，我这里chrome浏览器多次下载失败）
-http://download.db-ip.com/free/dbip-city-2016-05.csv.gz
+#下载地址(443M)：
+
+https://download.db-ip.com/free/dbip-city-lite-2023-10.csv.gz
 
 #postgres创建命令：
     CREATE TABLE public.db_ip (
