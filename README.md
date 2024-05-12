@@ -6,7 +6,7 @@
 
 #下载地址(443M)：
 
-[https://download.db-ip.com/free/dbip-city-lite-2023-10.csv.gz](https://download.db-ip.com/free/dbip-city-lite-2024-05.csv.gz)
+https://download.db-ip.com/free/dbip-city-lite-2024-05.csv.gz
 
 #postgres创建命令：
     CREATE TABLE public.db_ip (
